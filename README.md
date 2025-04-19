@@ -21,19 +21,21 @@ git clone https://github.com/nantzzsec/DCbypass.git
 pip install -r requirements.txt
 ```
 **Runing**
+USE **dummyuser** and **dummypass** To check endpoint
 ```
-python3 DCbypass.py -r 1.txt -w word.txt -U uname -P pass
+python3 DCbypass.py -r 1.txt -w wordlist.txt -U uname -P pass
 ```
 
 ## 💡 Cara Penggunaan
-1. **intercept login page di burpsuite copy dan buatkan file 1.txt**
+1. **intercept login page di burpsuite copy dan buatkan file 1.txt
+   - USE **dummyuser** and **dummypass** To check endpoint (example: uname=dummyuser&pass=dummypass)
    
    ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass4.png)
 
 3. **Masukkan payload yang digunakan untuk bypass login**:
    Sesuaikan parameter username dan password pada bagian -U dan -P
    ```
-   python3 DCbypass.py -r 1.txt -w word.txt -U uname -P pass
+   python3 DCbypass.py -r 1.txt -w wordlist.txt -U uname -P pass
    ```
    ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass1.png)
 
@@ -46,3 +48,13 @@ python3 DCbypass.py -r 1.txt -w word.txt -U uname -P pass
 
 ## 📄 Lisensi
 Proyek ini dilisensikan di bawah **MIT License**, yang berarti Anda dapat mendistribusikan dan memodifikasi proyek ini dengan mencantumkan kredit kepada saya.
+
+## Connect with me:
+
+<p align="left">
+
+<a href = "[https://id.linkedin.com/in/gede-ananda-960699309]"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
+<a href = "[https://www.instagram.com/darkclownsec.id/]"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+<a href = "[https://www.gedeananda.com/]"><img src="https://img.icons8.com/color/48/itranslate.png"/></a>
+<a href = "[https://www.tiktok.com/@accessdenied_error]"><img src="https://img.icons8.com/color/48/tiktok--v1.png"/></a>
+</p>
