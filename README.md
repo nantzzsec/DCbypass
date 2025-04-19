@@ -20,6 +20,10 @@ git clone https://github.com/nantzzsec/DCbypass.git
 ```
 pip install -r requirements.txt
 ```
+**Runing**
+```
+python3 DCbypass.py -r 1.txt -w word.txt -U uname -P pass
+```
 
 ## 💡 Cara Penggunaan
 1. **intercept login page di burpsuite copy dan buatkan file 1.txt**
