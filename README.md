@@ -12,22 +12,33 @@ Alat ini digunakan untuk menguji aplikasi web dengan mengeksploitasi kelemahan d
 - 📊 **Laporan hasil**: Menghasilkan laporan dan log yang mudah dibaca untuk analisis lebih lanjut.
 
 ## 💡 Instalasi
-'''git clone '''
+**Download Tools**
+```
+git clone https://github.com/nantzzsec/DCbypass.git
+```
+**Install dependencies**
+```
+pip install -r requirements.txt
+```
 
-- ## 💡 Cara Penggunaan
-1. **Menyiapkan URL login aplikasi**: Masukkan URL dari halaman login admin yang ingin diuji.
-   ![image](https://github.com/user-attachments/assets/your-image-link-here)
-
-2. **Masukkan payload yang digunakan untuk bypass login**:
-   ![image](https://github.com/user-attachments/assets/your-image-link-here)
-
-3. **Lakukan uji bypass pada form login** dengan mengirimkan payload yang sesuai dan memeriksa respons server.
+## 💡 Cara Penggunaan
+1. **intercept login page di burpsuite copy dan buatkan file 1.txt**
    
-4. **Verifikasi akses ke halaman admin**: Jika berhasil, alat ini akan mengonfirmasi akses yang berhasil ke halaman admin.
-   ![image](https://github.com/user-attachments/assets/your-image-link-here)
+   ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass4.png)
 
-5. **Hasil Akhir**: Alat ini akan menampilkan hasil uji bypass login dan memberikan informasi terkait potensi celah yang ditemukan.
-   ![image](https://github.com/user-attachments/assets/your-image-link-here)
+3. **Masukkan payload yang digunakan untuk bypass login**:
+   Sesuaikan parameter username dan password pada bagian -U dan -P
+   ```
+   python3 DCbypass.py -r 1.txt -w word.txt -U uname -P pass
+   ```
+   ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass1.png)
+
+5. **Lakukan uji bypass pada form login** dengan mengirimkan payload yang sesuai dan memeriksa respons server.
+   ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass2.png)
+   
+
+7. **Hasil Akhir**: Alat ini akan menampilkan hasil uji bypass login dan memberikan informasi terkait potensi celah yang ditemukan.
+   ![image](https://github.com/nantzzsec/nantzzsec/blob/f7485a63220a2cda81923cc0838b6d1584d416f0/assets/DCbypass3.png)
 
 ## 📄 Lisensi
 Proyek ini dilisensikan di bawah **MIT License**, yang berarti Anda dapat mendistribusikan dan memodifikasi proyek ini dengan mencantumkan kredit kepada saya.
