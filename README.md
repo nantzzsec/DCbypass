@@ -18,14 +18,17 @@ git clone https://github.com/nantzzsec/DCbypass.git
 ```
 **Install dependencies**
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-package
 ```
 **Runing**
 USE **dummyuser** and **dummypass** To check endpoint
 ```
-python3 DCbypass.py -r 1.txt -w wordlist.txt -U uname -P pass
+python3 DCbypass.py -r 1.txt
 ```
-
+**OR**
+```
+python3 DCbypass.py -u hackerone.com/login.php
+```
 ## 💡 Cara Penggunaan
 1. **intercept login page di burpsuite copy dan buatkan file 1.txt
    - USE **dummyuser** and **dummypass** To check endpoint (example: uname=dummyuser&pass=dummypass)
